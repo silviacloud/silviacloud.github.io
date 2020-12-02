@@ -15,14 +15,13 @@
 
 @include scrollbarre;
 
-.box{
-  width:100%;
-  .container{
-    max-width: 100%;
-    max-height: 100vh;
-    overflow-y: hidden;
-  }
+
+.container{
+  max-width: 100%;
+  max-height: 100%;
+  overflow-y: hidden;
 }
+
 
 .background{
   background: #ffa500;
@@ -30,7 +29,6 @@
 }
 
 header{
-
   width: 100%;
   color: #003333;
   padding: 2% 6%;
@@ -44,7 +42,6 @@ header{
     overflow-y: hidden;
     h2 a{
       color:#ffa500;
-      // color: #901d0a;
     }
     .active{
       color:#003333;
@@ -58,7 +55,6 @@ header{
       font-size: 20px;
       padding-right: 2%;
       &:hover{
-        // color: #ffa500;
         font-weight: 600;
       }
     }
@@ -73,16 +69,18 @@ header{
   }
 }
 
-
-
 .videocontainer{
   max-width: 100%;
-  min-height: 100%;
+  max-height: 100%;
   background-color: #ffa500;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   #myVideo {
     position: relative;
-    max-width: 100%;
-    max-height: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
     &:after {
       @include grainafter;
     }
@@ -96,26 +94,18 @@ header{
     width: 20%;
     p{
       margin-bottom: 20px;
-      // span{
-      //   &:hover{
-      //     font-size: 25px;
-      //   }
-      // }
-
     }
   }
 }
 
 
 .workwrapper{
-  // @include grainback;
   background-color: #ffa500;
   min-height: auto;
   max-width: 100%;
   color: #003333;
   right:0;
   .works{
-    // border-left: 2px solid #FE0879;
     max-width: 100%;
     height: 500px;
     position: relative;
@@ -126,8 +116,6 @@ header{
       color:#003333;
       margin-left: 1%;
       &:hover{
-        // color: #FF5733;
-        // color: #d173e1;
         color:#FE0879;
       }
     }
@@ -140,10 +128,6 @@ header{
       overflow-y: hidden;
       &:hover{
         overflow-y: auto;
-
-
-
-
       }
 
       &:hover .esempio{
@@ -190,10 +174,9 @@ header{
   max-width: 100%;
 }
 
-
-.contacts{
-  margin-top: 50vh;
-  margin-left: 20vw;
+.contact{
+  padding-top: 50vh;
+  padding-left: 20vw;
 }
 
 .activeborder{
@@ -216,19 +199,16 @@ header{
   margin-top: 150px;
   display: flex;
   justify-content: flex-start;
-  // border: 2px solid $color;
   .storyofmylife{
     width: 17vw;
     margin-top: 30vh;
     margin-left: 20vw;
-    // border: 2px solid $color;
     overflow-y: hidden;
     h2{
       margin-bottom: 30px;
     }
     a{
       text-decoration: none;
-      // border: 1px solid #682ae9;
       border: 1px solid #FE0879;
       background: #FE0879;
       border-radius: 5px;
@@ -351,6 +331,7 @@ header{
 
 }
 
+
 .contact{
   .contacts{
     width: 100%;
@@ -375,4 +356,44 @@ header{
     }
 
   }
+}
+
+
+
+//MEDIAQUERY
+
+@media all and (min-device-width: 1600px){
+    header{
+      height: 127px;
+    }
+
+    .workwrapper{
+      .works{
+        margin-top: calc(100vh - 900px);
+        height: 800px;
+        .esempi{
+          margin-left: 10px;
+          .esempio{
+            height: 50%;
+            margin-right: 30px;
+          }
+        }
+      }
+    }
+
+    .lifewrapper{
+      margin-top: 250px;
+      height: 100%;
+    }
+
+    .border{
+      height: 500px;
+    }
+    .story{
+      margin-top: 100px;
+    }
+}
+
+@media all and (min-device-width: 1600px){
+
 }

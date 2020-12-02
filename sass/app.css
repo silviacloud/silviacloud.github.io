@@ -28,13 +28,9 @@
   background: #FE0879;
 }
 
-.box {
-  width: 100%;
-}
-
-.box .container {
+.container {
   max-width: 100%;
-  max-height: 100vh;
+  max-height: 100%;
   overflow-y: hidden;
 }
 
@@ -92,14 +88,15 @@ header .right #insta {
 
 .videocontainer {
   max-width: 100%;
-  min-height: 100%;
+  max-height: 100%;
   background-color: #ffa500;
+  background-size: cover;
 }
 
 .videocontainer #myVideo {
   position: relative;
-  max-width: 100%;
-  max-height: 100%;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
 .videocontainer #myVideo:after {
@@ -292,9 +289,9 @@ header .right #insta {
   max-width: 100%;
 }
 
-.contacts {
-  margin-top: 50vh;
-  margin-left: 20vw;
+.contact {
+  padding-top: 50vh;
+  padding-left: 20vw;
 }
 
 .activeborder {
@@ -501,5 +498,38 @@ header .right #insta {
 .contact .contacts .linkgit:hover {
   color: #FE0879;
   font-weight: 600;
+}
+
+@media all and (min-device-width: 1600px) {
+  header {
+    height: 127px;
+  }
+
+  .workwrapper .works {
+    margin-top: calc(100vh - 900px);
+    height: 800px;
+  }
+
+  .workwrapper .works .esempi {
+    margin-left: 10px;
+  }
+
+  .workwrapper .works .esempi .esempio {
+    height: 50%;
+    margin-right: 30px;
+  }
+
+  .lifewrapper {
+    margin-top: 250px;
+    height: 100%;
+  }
+
+  .border {
+    height: 500px;
+  }
+
+  .story {
+    margin-top: 100px;
+  }
 }
 

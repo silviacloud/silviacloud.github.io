@@ -15,6 +15,7 @@ $(document).ready(function(){
 
   $('#letsee').click(function(e){
     $(".story").addClass('activeopacity');
+    $('.border').addClass('activeborder');
   });
 
 

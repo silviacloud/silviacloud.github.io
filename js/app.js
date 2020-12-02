@@ -105,6 +105,7 @@ $(document).ready(function () {
   });
   $('#letsee').click(function (e) {
     $(".story").addClass('activeopacity');
+    $('.border').addClass('activeborder');
   });
   $('.trallala h3').on('click', function () {
     $(this).siblings('p').addClass('defined').toggle('slow');
