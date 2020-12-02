@@ -134,8 +134,8 @@ $(document).ready(function () {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\sylwi\sites\portfolio\src\js\app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\sylwi\sites\portfolio\src\sass\app.scss */"./src/sass/app.scss");
+__webpack_require__(/*! C:\Users\sylwi\sites\silviacloud.github.io\src\js\app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\sylwi\sites\silviacloud.github.io\src\sass\app.scss */"./src/sass/app.scss");
 
 
 /***/ })
